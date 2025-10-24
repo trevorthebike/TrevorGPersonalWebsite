@@ -7,8 +7,7 @@ const Navbar: React.FC = () => {
         <Link href='./'><h1>Trevor Gardner Website</h1></Link>
         <Link className="navbaritems" href="./">Home   </Link>
         <Link className="navbaritems" href="/projects">Projects   </Link>
-        <Link className="navbaritems" href="/interests">Interests  </Link>
-        <Link className="navbaritems" href="/skills">Skills  </Link>
+        <Link className="navbaritems" href="/about">About  </Link>
       </div>
     </nav>
   );

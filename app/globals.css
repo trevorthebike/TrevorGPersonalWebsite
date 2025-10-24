@@ -208,10 +208,9 @@ div.main-content {
 
 .project-card {
   border: 2px solid #000; 
-  border-radius: 0.5rem; /* rounded corners */
+  border-radius: 0.5rem;
   padding: 1.5rem;
-  background-color: rgb(204, 181, 153); /* light blue */
-  /*transition: transform 0.2s ease, box-shadow 0.2s ease;*/
+  background-color: rgb(204, 181, 153); 
 }
 
 .project-card:hover {
@@ -243,7 +242,7 @@ div.main-content {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .image-wrapper {
     width: 80%;
   }
@@ -461,7 +460,7 @@ div.main-content {
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
-  background-color: white;
+  background-color: rgb(134, 113, 88);
   padding: 20px;
   margin: 20px;
 }

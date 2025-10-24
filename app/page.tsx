@@ -38,7 +38,7 @@ export default function Home() {
             <a href="https://github.com/trevorthebike" target="_blank" rel="noopener" className="project-link">GitHub</a>
           </p>
         </div>
-        </section>
+       </section>
 
       {/* Projects Section */}
       <section className="interests-section">
@@ -80,7 +80,7 @@ export default function Home() {
 
           <div className="interest-card">
             <div className="interest-image-wrapper">
-              <Image src="/gamedesign.png" alt="Game Design" fill className="interest-image" />
+              <Image src="/magic-anvil2.jpg" alt="Game Design" fill className="interest-image" />
             </div>
             <div className="interest-title">Game Design</div>
           </div>
