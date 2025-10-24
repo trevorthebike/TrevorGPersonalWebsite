@@ -221,15 +221,34 @@ div.main-content {
 
 .project-card-image {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.project-image{
+  padding: 10px;
+  border-radius: var(--radius-md);
+}
+
+.project-image:hover {
+  transform: scale(1.02);
 }
 
 .image-wrapper {
   position: relative; 
-  width: 50%;
+  width: 40%;
   aspect-ratio: 16 / 10; 
 }
 
+
+@media (max-width: 768px) {
+  .image-wrapper {
+    width: 80%;
+  }
+
+}
 
 .project-title {
   font-size: 1.5rem;
@@ -435,6 +454,16 @@ div.main-content {
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.interests-section-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
 }
 
 .interest-grid {
