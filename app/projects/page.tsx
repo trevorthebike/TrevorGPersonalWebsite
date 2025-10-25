@@ -4,8 +4,6 @@ import Image from 'next/image';
 export default function Projects() {
   return (
     <div className="projects-container">
-      <h2 className="projects-title">Projects</h2>
-
       <section className="project-card">
         <div className="project-card-inner">
           <div className="project-card-text">

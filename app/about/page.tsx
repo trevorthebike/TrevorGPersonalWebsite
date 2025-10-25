@@ -62,7 +62,12 @@ export default function About() {
           </div>
         </div>
        </section>
+      <section>
+        <div className="profile-card">
 
+          <img src="resume.png"></img>
+        </div>
+      </section>
     </main>
   );
 }

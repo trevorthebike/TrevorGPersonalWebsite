@@ -42,63 +42,79 @@ export default function Home() {
 
       {/* Projects Section */}
       <section className="interests-section">
-        <h3 className='interests-section-title'><a href="/projects">Projects</a></h3>
+        <a href="/projects">
+          <h3 className='interests-section-title'>Projects</h3>
+        </a>
         <div className="interest-grid">
           <div className="interest-card">
-            <div className="interest-image-wrapper">
-              <Image src="/magic-anvil.jpg" alt="Web Development" fill className="interest-image" />
-            </div>
-            <div className="interest-title">
-              <h4>Magic Anvil (Spring 24, UCSC)</h4>
-              <p>Developed core game functionality in Unity (C#), led deployment, internal tools, and QA testing in an Agile team.</p>
-            </div>
+            <a href="/projects">Projects
+              <div className="interest-image-wrapper" >
+                <Image src="/magic-anvil.jpg" alt="Web Development" fill className="interest-image" />
+              </div>
+              <div className="interest-title">
+                <h4>Magic Anvil (Spring 24, UCSC)</h4>
+                <p>Developed core game functionality in Unity (C#), led deployment, internal tools, and QA testing in an Agile team.</p>
+              </div>
+            </a>
           </div>
           <div className="interest-card">
-            <div className="interest-image-wrapper">
-              <Image src="/risposta1.png" alt="Web Development" fill className="interest-image" />
-            </div>
-            <div className="interest-title">
-              <h4>Riposta (Winter 23, UCSC)</h4>
-              <p>Built a student Q&A platform using Deno, Fresh, Supabase; implemented editing, deleting, and search functionality; practiced Scrum methodology.</p>
-            </div>
+            <a href="/projects">
+              <div className="interest-image-wrapper">
+                <Image src="/risposta1.png" alt="Web Development" fill className="interest-image" />
+              </div>
+              <div className="interest-title">
+                <h4>Riposta (Winter 23, UCSC)</h4>
+                <p>Built a student Q&A platform using Deno, Fresh, Supabase; implemented editing, deleting, and search functionality; practiced Scrum methodology.</p>
+              </div>
+            </a>
           </div>
           <div className="interest-card">
-            <div className="interest-image-wrapper">
-              <Image src="/soco1.png" alt="Web Development" fill className="interest-image" />
-            </div>
-            <div className="interest-title">  <h4>SoCo Clicks (Spring 22, SRJC)</h4>
-            <p>Led development of a photo contest platform with login and multi-round judging; sole developer on a 3-person team; automated judging process.</p>
-            </div>
+            <a href="/projects">
+              <div className="interest-image-wrapper">
+                <Image src="/soco1.png" alt="Web Development" fill className="interest-image" />
+              </div>
+              <div className="interest-title">  <h4>SoCo Clicks (Spring 22, SRJC)</h4>
+              <p>Led development of a photo contest platform with login and multi-round judging; sole developer on a 3-person team; automated judging process.</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       {/* Interests Section */}
       <section className="interests-section">
-        <h3 className='interests-section-title'><a href="/interests">My Interests</a></h3>
+        <a href="/about">
+          <h3 className='interests-section-title'>My Interests</h3>
+        </a>
         <div className="interest-grid">
 
           <div className="interest-card">
-            <div className="interest-image-wrapper">
-              <Image src="/magic-anvil2.jpg" alt="Game Design" fill className="interest-image" />
-            </div>
-            <div className="interest-title">Game Design</div>
+            <a href="/about">
+              <div className="interest-image-wrapper">
+                <Image src="/magic-anvil2.jpg" alt="Game Design" fill className="interest-image" />
+              </div>
+              <div className="interest-title">Game Design</div>
+            </a>
           </div>
 
           <div className="interest-card">
-            <div className="interest-image-wrapper">
-              <Image src="/riderpredictor1.png" alt="AI & Machine Learning" fill className="interest-image" />
-            </div>
-            <div className="interest-title">AI & Machine Learning</div>
+            <a href="/about">
+              <div className="interest-image-wrapper">
+                <Image src="/riderpredictor1.png" alt="AI & Machine Learning" fill className="interest-image" />
+              </div>
+              <div className="interest-title">AI & Machine Learning</div>
+            </a>
           </div>
 
           <div className="interest-card">
-            <div className="interest-image-wrapper">
-              <Image src="/tux.jpeg" alt="Linux" fill className="interest-image" />
-            </div>
-            <div className="interest-title">Linux & Low-Level Systems</div>
+            <a href="/about">
+              <div className="interest-image-wrapper">
+                <Image src="/tux.jpeg" alt="AI & Machine Learning" fill className="interest-image" />
+              </div>
+              <div className="interest-title">Linux and Low Level Systems</div>
+            </a>
           </div>
-
+    
         </div>
       </section>
 
