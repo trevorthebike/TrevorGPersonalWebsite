@@ -1,62 +1,5 @@
-
-
 @import "tailwindcss";
-
 @import "tw-animate-css";
-
-/*---break---
-  */
-
-@custom-variant dark (&:is(.dark *));
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 100, 0, 0;
-  --background-start-rgb: 120, 0, 0;
-  --background-end-rgb: 0, 255, 255;
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 .title{
   text-align: center;
@@ -69,21 +12,21 @@
 
 .memberpage{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates 2 columns of equal width */
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
 }
 
 .mainpage{
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Creates 2 columns of equal width */
+  grid-template-columns: repeat(1, 1fr);
   gap: 0px;
 }
 
 section.team-member,
 div.team-member{
   border: rgb(0, 0, 0) 4px solid;;
-  background-color: rgb(143, 177, 248);
+  background-color: rgb(0, 0, 0);
   padding: 10px;
   margin-bottom: 20px;
   text-align: center;
@@ -105,41 +48,69 @@ p.team-member-content{
   padding: 10px;
 }
 
-.navbarmini{
-  border: 4px solid rgb(10, 10, 10);
-  padding: 10px;
+.navbarmini {
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background: rgb(134, 113, 88);
-  background-image: url("/redwoods.jpg");
-  color: rgb(0, 0, 0);
-  font-size: 3rem;
-  text-align: center;
+  padding: 5px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-.navbartitle{
-  font-size: 2rem;
-  border: 2px solid black;
-  background-color: rgb(134, 113, 88);
-  margin: 10px;
-  padding: 10px;
-  border-radius: 20px;
-  
+.navbarimage {
+  background-image: url("/mtb.png");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
 }
 
-.navbaritems{
-  padding-inline: 10%;
-  font-size: 2rem;
-  border: 2px solid black;
+.navbartitle {
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbartitle:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transform: scale(1.05);
+}
+
+.navbaritems {
+  font-size: 12px;
+  margin-right: 10px;
+  padding: 6px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbaritems:hover {
   background-color: white;
-  border-radius: 20px;
-  margin: 20px;
+  color: black;
+  transform: scale(1.05);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
 }
 
 .footer{
   border: 4px solid rgb(0, 0, 0);
   padding: 10px;
   align-items: left;
-  background: rgb(134, 113, 88);
+  background: rgb(0, 0, 0);
   color: white;
   font-size: 32px;
   text-align: right;
@@ -179,9 +150,8 @@ div.main-content {
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* space between projects */
+  gap: 2rem; 
   padding: 2rem;
-  background-image: url("redwood.jpeg");
 }
 
 .projects-title {
@@ -189,8 +159,8 @@ div.main-content {
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
-  color: #111827; /* dark gray */
-  background-color: rgb(134, 113, 88);
+  color: #000000; 
+  background-color: rgb(0, 0, 0);
   border: 2px solid #000; 
   border-radius: 0.5rem;
 }
@@ -199,7 +169,8 @@ div.main-content {
   border: 2px solid #000; 
   border-radius: 0.5rem;
   padding: 1.5rem;
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(0, 0, 0); 
+  color: white;
 }
 
 .project-card:hover {
@@ -216,9 +187,8 @@ div.main-content {
 }
 
 .project-image{
-  padding: 10px;
-  border-radius: var(--radius-md);
-  border: 4px solid rgb(134, 113, 88)
+  border-radius: 16px;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .project-image:hover {
@@ -231,12 +201,10 @@ div.main-content {
   aspect-ratio: 16 / 10; 
 }
 
-
 @media (max-width: 1000px) {
   .image-wrapper {
     width: 80%;
   }
-
 }
 
 .project-title {
@@ -245,142 +213,55 @@ div.main-content {
   margin-bottom: 0.25rem;
   border: 2px solid #000; 
   border-radius: 0.5rem;
-  padding: 10px;
 }
 
 .project-meta {
   font-size: 0.875rem;
-  color: #6b7280; /* gray-500 */
   margin-bottom: 1rem;
 }
 
 .project-link {
   display: inline-block;
   margin-top: 1rem;
-  color: #1d4ed8; /* blue-700 */
+  color: #1d4ed8; 
   font-weight: 600;
   text-decoration: underline;
 }
 
 .project-link:hover {
-  color: #2563eb; /* blue-600 */
+  color: #2563eb; 
 }
-
-/*---break---
-  */
-
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
-
-/*---break---
-  */
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-}
-
-/*---break---
-  */
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-/* ---------- HOME PAGE STYLES ---------- */
 
 .home-container {
   min-height: 100vh;
-  background-color: #f9fafb;
-  color: #111827;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem 1.5rem;
-  background-image: url("redwood.jpeg");
 }
 
-/* Profile Card */
 .profile-card {
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 6px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 64rem; /* 1024px */
-  width: 100%;
+  max-width: 64rem;
   margin-bottom: 3rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-card1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 64rem;
 }
 
 @media (min-width: 768px) {
@@ -392,7 +273,7 @@ div.main-content {
 
 .profile-image-wrapper {
   position: relative;
-  width: 10rem; /* 160px */
+  width: 10rem; 
   height: 10rem;
   margin-bottom: 1.5rem;
 }
@@ -406,7 +287,7 @@ div.main-content {
 
 .profile-image {
   object-fit: cover;
-  border-radius: 9999px;
+  border-radius: 40px;
   border: 4px solid #d1d5db;
 }
 
@@ -415,24 +296,20 @@ div.main-content {
 }
 
 .profile-name {
-  font-size: 1.875rem; /* text-3xl */
+  font-size: 1.875rem; 
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .profile-role {
   font-size: 1.125rem;
-  color: #6b7280;
   margin-bottom: 1rem;
 }
 
 .profile-description {
-  color: #374151;
-  line-height: 1.7;
   margin-bottom: 1rem;
 }
 
-/* Interests */
 .interests-section {
   max-width: 64rem;
   width: 100%;
@@ -443,6 +320,7 @@ div.main-content {
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
+  color: white;
 }
 
 .interests-section-title{
@@ -450,7 +328,9 @@ div.main-content {
   font-weight: 600;
   margin-bottom: 1.5rem;
   text-align: center;
-  background-color: rgb(134, 113, 88);
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 8px;
   padding: 20px;
   margin: 20px;
 }
@@ -468,7 +348,8 @@ div.main-content {
 }
 
 .interest-card {
-  background-color: white;
+  background-color: rgb(0, 0, 0);
+  color: white;
   border-radius: 0.75rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -482,7 +363,7 @@ div.main-content {
 .interest-image-wrapper {
   position: relative;
   width: 100%;
-  height: 12rem; /* 192px */
+  height: 12rem;
 }
 
 .interest-image {
@@ -493,5 +374,5 @@ div.main-content {
   padding: 1rem;
   text-align: center;
   font-weight: 500;
-  color: #1f2937;
+  color: #ffffff;
 }

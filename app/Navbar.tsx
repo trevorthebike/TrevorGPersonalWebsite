@@ -1,16 +1,22 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="navbarmini">
-      <div>
-        <Link  href='./'><h1 className= "navbartitle">Trevor Gardner Website</h1></Link>
-        <Link className="navbaritems" href="./">Home   </Link>
-        <Link className="navbaritems" href="/projects">Projects   </Link>
-        <Link className="navbaritems" href="/about">About  </Link>
+    <nav>
+      <div className="navbarmini">
+        <div className="navbar-left">
+          <Link href="/" className="navbarimage" />
+          <Link href="/" className="navbartitle">
+            Trevor Gardner Website
+          </Link>
+        </div>
+        <div className="navbar-right">
+          <Link href="/projects" className="navbaritems">Projects</Link>
+          <Link href="/about" className="navbaritems">About</Link>
+        </div>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

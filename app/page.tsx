@@ -15,9 +15,8 @@ export default function Home() {
           />
         </div>
 
-        {/* Bio Section */}
         <div className="profile-text">
-          <h1 className="profile-name">Hi, I’m Trevor Gardner</h1>
+          <h1 className="profile-name">Trevor Gardner</h1>
           <h2 className="profile-role">Software Engineer | Game Developer | Tech Enthusiast</h2>
           <ul>
           <li>
@@ -38,16 +37,15 @@ export default function Home() {
             <a href="https://github.com/trevorthebike" target="_blank" rel="noopener" className="project-link">GitHub</a>
           </p>
         </div>
-       </section>
-
-      {/* Projects Section */}
+      </section>
+      
       <section className="interests-section">
         <a href="/projects">
           <h3 className='interests-section-title'>Projects</h3>
         </a>
         <div className="interest-grid">
           <div className="interest-card">
-            <a href="/projects">Projects
+            <a href="/projects">
               <div className="interest-image-wrapper" >
                 <Image src="/magic-anvil.jpg" alt="Web Development" fill className="interest-image" />
               </div>
@@ -81,13 +79,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Interests Section */}
       <section className="interests-section">
         <a href="/about">
           <h3 className='interests-section-title'>My Interests</h3>
         </a>
         <div className="interest-grid">
-
           <div className="interest-card">
             <a href="/about">
               <div className="interest-image-wrapper">
@@ -96,7 +92,6 @@ export default function Home() {
               <div className="interest-title">Game Design</div>
             </a>
           </div>
-
           <div className="interest-card">
             <a href="/about">
               <div className="interest-image-wrapper">
@@ -105,7 +100,6 @@ export default function Home() {
               <div className="interest-title">AI & Machine Learning</div>
             </a>
           </div>
-
           <div className="interest-card">
             <a href="/about">
               <div className="interest-image-wrapper">
@@ -117,7 +111,6 @@ export default function Home() {
     
         </div>
       </section>
-
     </main>
   );
 }
