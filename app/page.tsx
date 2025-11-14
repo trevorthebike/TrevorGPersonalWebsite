@@ -6,15 +6,6 @@ export default function Home() {
   return (
     <main className="home-container">
       <section className="profile-card">
-        <div className="profile-image-wrapper">
-          <Image
-            src="/trevor.jpg"
-            alt="Trevor Gardner"
-            fill
-            className="profile-image"
-          />
-        </div>
-
         <div className="profile-text">
           <h1 className="profile-name">Trevor Gardner</h1>
           <h2 className="profile-role">Software Engineer | Game Developer | Tech Enthusiast</h2>
@@ -23,7 +14,7 @@ export default function Home() {
             <strong>University of California, Santa Cruz</strong><br />
             B.S. in Computer Science: Computer Game Design, Spring 2024
           </li>
-          <br />
+          <br/>
           </ul>
           <p className="profile-description">
             Based in Santa Cruz, CA. I’m a Computer Science graduate from UCSC specializing in Computer Game Design. 
@@ -36,6 +27,11 @@ export default function Home() {
             <br/>  
             <a href="https://github.com/trevorthebike" target="_blank" rel="noopener" className="project-link">GitHub</a>
           </p>
+        </div>
+        <div className="profile-image-wrapper">
+          <Image
+            src="/trevor.jpg" alt="Trevor Gardner" fill className="profile-image"
+          />
         </div>
       </section>
       
@@ -108,7 +104,6 @@ export default function Home() {
               <div className="interest-title">Linux and Low Level Systems</div>
             </a>
           </div>
-    
         </div>
       </section>
     </main>
