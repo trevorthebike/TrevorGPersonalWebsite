@@ -18,7 +18,7 @@ export default function Projects() {
                 This project processes stage time-series data for riders, performs feature engineering and scaling,
                 and trains an LSTM model to classify rider performance. The original target (predicting exact race
                 result) was reframed to a classification task due to complexity; validation accuracy has been
-                observed around <strong>68–70%</strong>.
+                observed around <strong>68-70%</strong>.
               </p>
               <br></br>
               <ul>

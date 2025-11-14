@@ -38,7 +38,7 @@ export default function About() {
               Outside of software, I have spent several years working as a sales associate at local
               bike shops, first at Bike Peddler in Santa Rosa and now at CycleSport in Santa Cruz.
             </a>
-         <h1 className="profile-title">What I'm Into</h1>
+         <h1 className="profile-title">What I am Into</h1>
             <a className="profile-section">
               Im especially interested in:
               <li>AI applications</li>
