@@ -28,11 +28,6 @@ export default function Home() {
             <a href="https://github.com/trevorthebike" target="_blank" rel="noopener" className="project-link">GitHub</a>
           </p>
         </div>
-        <div className="profile-image-wrapper">
-          <Image
-            src="/trevor.jpg" alt="Trevor Gardner" fill className="profile-image"
-          />
-        </div>
       </section>
       
       <section className="interests-section">

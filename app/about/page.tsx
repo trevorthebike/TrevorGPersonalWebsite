@@ -7,7 +7,7 @@ export default function About() {
         <div className="profile-card">
           <h1 className="profile-title">About Me</h1>
             <a className="profile-section">
-              Hi, Im Trevor Gardner — a developer, problem-solver, and cyclist based in the 
+              Hi, I am Trevor Gardner — a developer, problem-solver, and cyclist based in the 
               Santa Cruz. I graduated from the University of California,
               Santa Cruz with a B.S. in Computer Science: Computer Game Design, where I focused on game 
               development, systems programming, and building interactive experiences.
